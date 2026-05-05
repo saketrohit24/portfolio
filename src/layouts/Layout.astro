@@ -4,6 +4,7 @@ import { DATA } from "@/data/resume";
 import { CONFIG } from "@/data/config";
 import NavbarIsland from "@/components/NavbarIsland";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
+import ShootingStars from "@/components/ShootingStars";
 
 interface Props {
   title?: string;
@@ -156,6 +157,9 @@ const { baseFontSize } = CONFIG.typography;
     <div class="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
       <slot />
     </div>
+
+    <!-- Shooting stars background (dark mode only) -->
+    <ShootingStars client:load />
 
     <!-- Navbar: ThemeProvider + TooltipProvider + Navbar all in one React island -->
     <NavbarIsland client:load />
