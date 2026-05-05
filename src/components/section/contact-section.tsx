@@ -1,5 +1,6 @@
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { DATA } from "@/data/resume";
+import { Mail, Phone, ArrowUpRight } from "lucide-react";
 
 export default function ContactSection() {
   return (
@@ -18,15 +19,46 @@ export default function ContactSection() {
           }}
         />
       </div>
-      <div className="relative flex flex-col items-center gap-4 text-center">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          {DATA.sections.contact.heading}
-        </h2>
-        <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          {DATA.sections.contact.text}
-        </p>
+      <div className="relative flex flex-col items-center gap-6 text-center">
+        <div>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            {DATA.sections.contact.heading}
+          </h2>
+          <p className="mt-3 mx-auto max-w-lg text-muted-foreground text-balance">
+            {DATA.sections.contact.text}
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-3 w-full max-w-sm">
+          <a
+            href={`mailto:${DATA.contact.email}`}
+            className="group flex-1 flex items-center gap-3 px-5 py-3.5 rounded-xl border bg-background hover:bg-muted transition-colors duration-200"
+          >
+            <span className="flex items-center justify-center size-9 rounded-lg bg-primary/10 text-primary shrink-0">
+              <Mail className="size-4" />
+            </span>
+            <div className="flex-1 text-left min-w-0">
+              <p className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider">Email</p>
+              <p className="text-sm font-semibold truncate">{DATA.contact.email}</p>
+            </div>
+            <ArrowUpRight className="size-4 text-muted-foreground opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 shrink-0" />
+          </a>
+
+          <a
+            href={`tel:+1${DATA.contact.tel.replace(/\D/g, "")}`}
+            className="group flex-1 flex items-center gap-3 px-5 py-3.5 rounded-xl border bg-background hover:bg-muted transition-colors duration-200"
+          >
+            <span className="flex items-center justify-center size-9 rounded-lg bg-primary/10 text-primary shrink-0">
+              <Phone className="size-4" />
+            </span>
+            <div className="flex-1 text-left min-w-0">
+              <p className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider">Phone</p>
+              <p className="text-sm font-semibold">{DATA.contact.tel}</p>
+            </div>
+            <ArrowUpRight className="size-4 text-muted-foreground opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 shrink-0" />
+          </a>
+        </div>
       </div>
     </div>
   );
 }
-
