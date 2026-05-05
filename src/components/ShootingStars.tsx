@@ -60,14 +60,14 @@ export default function ShootingStars() {
 
     const makeMeteor = (): Meteor => {
       const { leftEdge, rightEdge } = gutters();
-      // Mostly downward with a small diagonal lean
-      const angle = Math.PI / 2 + (Math.random() - 0.5) * 0.5;
-      const speed = Math.random() * 5 + 3;
+      // ~45° diagonal with slight random variation
+      const angle = Math.PI / 4 + (Math.random() - 0.5) * 0.2;
+      const speed = Math.random() * 4 + 3;
       return {
         x: randomX(leftEdge, rightEdge),
         y: Math.random() * -100,
         vx: Math.cos(angle) * speed,
-        vy: Math.abs(Math.sin(angle) * speed) + 2,
+        vy: Math.sin(angle) * speed,
         alpha: 1,
         length: Math.random() * 110 + 50,
         decay: Math.random() * 0.007 + 0.004,
@@ -124,7 +124,7 @@ export default function ShootingStars() {
       }
 
       // Spawn meteors
-      if (Math.random() < 0.018 && meteors.length < 8) {
+      if (Math.random() < 0.006 && meteors.length < 5) {
         meteors.push(makeMeteor());
       }
 
