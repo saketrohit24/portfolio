@@ -140,7 +140,7 @@ export const DATA = {
       school: "Ohio University",
       href: "https://www.ohio.edu",
       degree: "Master of Science, Computer Science",
-      logoUrl: "/ohio.png",
+      logoUrl: "/photos/oulogo.png",
       start: "2024",
       end: "2025",
       description:
@@ -150,7 +150,7 @@ export const DATA = {
       school: "Osmania University",
       href: "https://www.osmania.ac.in",
       degree: "Bachelor of Engineering, Computer Science",
-      logoUrl: "/osmania.png",
+      logoUrl: "/photos/osmania.png",
       start: "2019",
       end: "2023",
       description:
