@@ -103,7 +103,7 @@ export const DATA = {
       badges: [],
       location: "Princeton, NJ",
       title: "GenAI Engineer Intern",
-      logoUrl: "/otsuka.png",
+      logoUrl: "/photos/Otsuka_basic.jpg",
       start: "May 2025",
       end: "Aug 2025",
       description:
@@ -115,7 +115,7 @@ export const DATA = {
       badges: [],
       location: "Hyderabad, India",
       title: "Software Development Intern",
-      logoUrl: "/xelpmoc.png",
+      logoUrl: "/photos/xelp-logo.jpg",
       start: "Oct 2022",
       end: "Jan 2023",
       description:
@@ -127,7 +127,7 @@ export const DATA = {
       badges: [],
       location: "Hyderabad, India",
       title: "Machine Learning Intern",
-      logoUrl: "/drdo.png",
+      logoUrl: "/photos/drdo.png",
       start: "May 2022",
       end: "Aug 2022",
       description:
