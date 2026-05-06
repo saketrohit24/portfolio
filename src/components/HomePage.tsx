@@ -140,7 +140,7 @@ export default function HomePage() {
             <div className="gap-2 flex flex-col order-2 md:order-1">
               <BlurFade delay={BLUR_FADE_DELAY}>
                 <h1 className="handwrite text-3xl font-semibold sm:text-4xl lg:text-5xl">
-                  {`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                  {`Hi, I'm ${DATA.name.split(" ")[0]}!`}
                 </h1>
               </BlurFade>
               <BlurFadeText
