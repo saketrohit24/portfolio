@@ -268,6 +268,26 @@ export const DATA = {
       video: "",
     },
     {
+      title: "InSAR Land Subsidence Decomposition — AGU 2024",
+      href: "https://agu24.ipostersessions.com/default.aspx?s=8C-49-05-A1-81-E2-CE-1E-FA-F2-E7-7A-48-4F-1C-EC",
+      dates: "2024",
+      active: true,
+      description:
+        "Decomposed InSAR-derived land subsidence signals in California's Central Valley into elastic and inelastic components using PCA and ICA. Preprocessed multi-band GeoTIFF data, ran time-series analysis, and produced calibrated outputs for C2VSim groundwater model validation. Presented as an iPoster at AGU Fall Meeting 2024.",
+      technologies: [
+        "Python", "InSAR", "PCA", "ICA", "GDAL", "GeoPandas", "NumPy", "Matplotlib",
+      ],
+      links: [
+        {
+          type: "iPoster",
+          href: "https://agu24.ipostersessions.com/default.aspx?s=8C-49-05-A1-81-E2-CE-1E-FA-F2-E7-7A-48-4F-1C-EC",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Deep Stacked BiLSTM for Petroleum Forecasting",
       href: "#",
       dates: "2023",
@@ -316,7 +336,7 @@ export const DATA = {
         {
           title: "Paper",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "https://ieeexplore.ieee.org/abstract/document/11353437",
         },
       ],
     },
@@ -331,7 +351,7 @@ export const DATA = {
         {
           title: "Paper",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "https://ieeexplore.ieee.org/document/11114257",
         },
       ],
     },
@@ -346,7 +366,7 @@ export const DATA = {
         {
           title: "Paper",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "https://www.sciencedirect.com/science/article/pii/S187705092300248X",
         },
       ],
     },
@@ -358,6 +378,21 @@ export const DATA = {
         "Poster: Deep Spiking Q-Networks for Strategic Games. Demonstrated 4× reduction in synaptic operations per inference step vs. a conventional DQN on Tic-Tac-Toe and Connect 4.",
       image: "",
       links: [],
+    },
+    {
+      title: "Decomposition of Inelastic and Elastic Components of Total Subsidence for Model Calibration Evaluation",
+      dates: "Dec 2024",
+      location: "AGU Fall Meeting 2024 — iPoster",
+      description:
+        "Applied PCA and ICA to decompose InSAR-derived land subsidence signals in California's Central Valley into elastic and inelastic components. Preprocessed multi-band GeoTIFF data, performed time series analysis, and delivered calibrated outputs for C2VSim groundwater model validation.",
+      image: "",
+      links: [
+        {
+          title: "iPoster",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://agu24.ipostersessions.com/default.aspx?s=8C-49-05-A1-81-E2-CE-1E-FA-F2-E7-7A-48-4F-1C-EC",
+        },
+      ],
     },
   ],
 } as const;
