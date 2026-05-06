@@ -13,7 +13,7 @@ function ProjectBanner({ title }: { title: string }) {
         aria-hidden
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
       >
-        <span className="text-[88px] font-black leading-none tracking-tighter text-foreground/[0.045] text-center px-6 whitespace-nowrap">
+        <span className="text-[36px] font-black leading-tight tracking-tighter text-foreground/[0.07] text-center px-6">
           {title}
         </span>
       </div>
