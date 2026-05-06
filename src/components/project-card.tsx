@@ -6,11 +6,31 @@ import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectBanner({ title }: { title: string }) {
+  return (
+    <div className="w-full h-48 bg-card border-b border-border relative overflow-hidden flex items-end p-5">
+      <div
+        aria-hidden
+        className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
+      >
+        <span className="text-[88px] font-black leading-none tracking-tighter text-foreground/[0.045] text-center px-6 whitespace-nowrap">
+          {title}
+        </span>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.06] via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-card/80 via-transparent to-transparent" />
+      <span className="relative z-10 text-[10px] font-semibold uppercase tracking-[0.18em] text-muted-foreground/50">
+        Project
+      </span>
+    </div>
+  );
+}
+
+function ProjectImage({ src, alt, title }: { src: string; alt: string; title: string }) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
-    return <div className="w-full h-48 bg-muted" />;
+    return <ProjectBanner title={title} />;
   }
 
   return (
@@ -74,9 +94,9 @@ export function ProjectCard({
               className="w-full h-48 object-cover"
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage src={image} alt={title} title={title} />
           ) : (
-            <div className="w-full h-48 bg-muted" />
+            <ProjectBanner title={title} />
           )}
         </a>
         {links && links.length > 0 && (
