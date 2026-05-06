@@ -12,7 +12,7 @@ export const DATA = {
   location: "Austin, TX",
   locationLink: "https://maps.google.com/?q=Austin,TX",
   description:
-    "AI/ML Engineer building intelligent systems with SNNs, RAG, and Reinforcement Learning.",
+    "AI/ML Engineer building intelligent systems with SNNs, LLMs, and Reinforcement Learning.",
   summary:
     "I recently completed my MS in Computer Science at Ohio University, where my thesis focused on spiking world models for sample-efficient continuous control. I have production experience building LLM and RAG systems at Otsuka Pharmaceutical, and research experience spanning neuromorphic RL, reward modeling, and agentic pipelines. I'm currently looking for AI/ML engineering roles in Austin.",
   avatarUrl: "/photos/photprofile.jpeg",
