@@ -115,6 +115,17 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+@keyframes handwrite {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0% 0 0); }
+}
+
+.handwrite {
+  font-family: 'Caveat', cursive;
+  animation: handwrite 1.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
+  display: inline-block;
+  padding-right: 12px;
+}
 
 @layer base {
   * {
