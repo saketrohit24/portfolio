@@ -61,7 +61,7 @@ export default function SideNav() {
       {/* Mobile FAB */}
       <div
         ref={fabRef}
-        className="lg:hidden fixed bottom-20 right-4 z-20 flex flex-col items-end gap-2"
+        className="lg:hidden fixed bottom-4 right-4 z-20 flex flex-col items-end gap-2"
       >
         {/* Section menu — fades up when open */}
         <div className={`flex flex-col overflow-hidden rounded-2xl border bg-card/90 backdrop-blur-md shadow-lg transition-all duration-250 origin-bottom-right ${
