@@ -27,7 +27,7 @@ const posts = paginatedPosts.map((post) => ({
 }));
 ---
 
-<Layout title="Blog" description="Thoughts on software development, life, and more.">
+<Layout title="Blog" description="Thoughts on software development, life, and more." hideNav={true}>
   <BlogList
     client:load
     posts={posts}

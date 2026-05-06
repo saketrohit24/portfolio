@@ -54,6 +54,7 @@ const jsonLd = JSON.stringify({
   description={summary}
   image={image}
   canonicalURL={`${DATA.url}/blog/${slug}`}
+  hideNav={true}
 >
   <section id="blog">
     <script is:inline type="application/ld+json" set:html={jsonLd} />

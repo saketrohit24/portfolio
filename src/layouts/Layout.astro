@@ -12,6 +12,7 @@ interface Props {
   description?: string;
   image?: string;
   canonicalURL?: string;
+  hideNav?: boolean;
 }
 
 const {
@@ -19,6 +20,7 @@ const {
   description = DATA.description,
   image,
   canonicalURL = Astro.url.href,
+  hideNav = false,
 } = Astro.props;
 
 const pageTitle = title
@@ -162,10 +164,7 @@ const { baseFontSize } = CONFIG.typography;
     <!-- Shooting stars background (dark mode only) -->
     <ShootingStars client:load />
 
-    <!-- Minimalist side navigation -->
-    <SideNav client:load />
-
-    <!-- Navbar: ThemeProvider + TooltipProvider + Navbar all in one React island -->
-    <NavbarIsland client:load />
+    {!hideNav && <SideNav client:load />}
+    {!hideNav && <NavbarIsland client:load />}
   </body>
 </html>
