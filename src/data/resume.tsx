@@ -15,7 +15,7 @@ export const DATA = {
     "AI/ML Engineer — spiking neural networks, RAG systems, and model-based RL. 3 publications. MS CS, Ohio University.",
   summary:
     "I recently completed my MS in Computer Science at Ohio University, where my thesis focused on spiking world models for sample-efficient continuous control. I have production experience building LLM and RAG systems at Otsuka Pharmaceutical, and research experience spanning neuromorphic RL, reward modeling, and agentic pipelines. I'm currently looking for AI/ML engineering roles in Austin.",
-  avatarUrl: "/photos/mainphoto.jpeg",
+  avatarUrl: "/photos/photprofile.jpeg",
   ogImage: "/og_image.png",
   sections: {
     about: { order: 1, enabled: true, heading: "About" },
