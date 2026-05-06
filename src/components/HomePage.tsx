@@ -10,7 +10,6 @@ import PhotosSection from "@/components/section/photos-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
-import TypingEffect from "@/components/TypingEffect";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -139,15 +138,16 @@ export default function HomePage() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 gap-y-6 flex flex-col md:flex-row justify-between">
             <div className="gap-2 flex flex-col order-2 md:order-1">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
-              />
-              <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                <TypingEffect />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <h1 className="handwrite text-3xl font-semibold sm:text-4xl lg:text-5xl">
+                  {`Hi, I'm ${DATA.name.split(" ")[0]}`}
+                </h1>
               </BlurFade>
+              <BlurFadeText
+                className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
+                delay={BLUR_FADE_DELAY}
+                text={DATA.description}
+              />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY} className="order-1 md:order-2">
               <Avatar className="size-24 md:size-32 border rounded-full shadow-lg ring-4 ring-muted">
