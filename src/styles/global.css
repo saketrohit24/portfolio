@@ -124,6 +124,7 @@
   font-family: 'Caveat', cursive;
   animation: handwrite 1.6s cubic-bezier(0.4, 0, 0.2, 1) 0.3s both;
   display: inline-block;
+  padding-right: 6px;
 }
 
 @layer base {
